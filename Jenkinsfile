@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Deploy Container') {
             steps {
-                sh 'docker run -d -p 5000:5000 --name flask-app flask-mlops-app:latest'
+                sh 'docker run -d -p 5001:5000 --name flask-app flask-mlops-app:latest'
             }
         }
     }
